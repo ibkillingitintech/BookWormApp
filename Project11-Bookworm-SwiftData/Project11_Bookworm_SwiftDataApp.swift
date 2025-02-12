@@ -2,9 +2,8 @@
 //  Project11_Bookworm_SwiftDataApp.swift
 //  Project11-Bookworm-SwiftData
 //
-//  Created by Ibraheem k. Rawlinson on 11/7/24.
 //
-
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +12,6 @@ struct Project11_Bookworm_SwiftDataApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Book.self)
     }
 }
